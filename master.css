@@ -438,3 +438,69 @@ table td:nth-child(1){
     
     
 }
+
+
+/* videocard */
+
+.videocard-container{
+  
+  padding-top: 110px;
+}
+
+.videocard-container{
+  
+  padding-top: 110px;
+}
+
+.videocard-container a{
+  font-size: 20px;
+  color: #eb595f;
+}
+
+.video-card{
+  position: relative;
+  padding-top:50px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body{
+  text-align: center;
+  font-style: italic;
+}
+
+.name-card{
+  font-weight: 600;
+}
+
+.grey{
+  font-style: normal;
+  color: #888888;
+}
+
+.card-body{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.card{
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.card:hover{
+  box-shadow: 1px 0.5px 10px #d9d6d8;
+}
+
+.card-img{
+  overflow: hidden;
+}
+
+.card img{
+  transition: transform 0.5s ease;
+}
+
+.card img:hover{
+ transform:scale(1.1) ;
+}
