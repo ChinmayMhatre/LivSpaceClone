@@ -1,7 +1,17 @@
 
+.big{
+  font-size: 50px;
+}
+
+
+.red{
+  color: #eb595f;
+}
+
 .big-headers{
   font-family: 'Baloo Tamma 2', cursive;
   font-weight: 700;
+  font-size: 40px;
   color: #41303e;
 }
 
@@ -504,3 +514,18 @@ table td:nth-child(1){
 .card img:hover{
  transform:scale(1.1) ;
 }
+
+
+/* below video card */
+
+.b-vc img{
+  border-radius: 5px;
+  width: 650px;
+}
+
+.b-vc a img{
+  
+  width: 13px;
+  padding-left:3px ;
+}
+
