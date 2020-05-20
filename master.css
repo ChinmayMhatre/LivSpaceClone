@@ -529,3 +529,119 @@ table td:nth-child(1){
   padding-left:3px ;
 }
 
+
+
+/* chatbox */
+
+.open-button {
+  background-color: #78A300 ;
+  color: black;
+  padding: 16px 15px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 30px;
+  width: 130px;
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  border-radius: 50px;
+  
+}
+
+.open-button img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.open-button div {
+  padding: 0%;
+}
+
+.chat-popup {
+  
+  box-shadow: 1px 1px 10px #888888;
+  width: 450px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 25px;
+  border:none;
+  background-color: #78A300;
+  z-index: 9;
+  border-radius: 10px;
+}
+
+.form-container {
+  max-height: 500px;
+  max-width: 100%;
+  padding: 30px;
+  padding-bottom: 50px;
+  background-color: white;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+
+  
+}
+
+.headsec{
+  width: 100%;
+  padding: 15px 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  
+}
+
+.headsec h5{
+  padding: 0%;
+  margin: 0;
+  
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  left:35%;
+}
+.headsec img {
+  margin-left: auto;
+  width: 25px;
+ 
+}
+
+.form-group{
+  padding-top: 20px;
+}
+
+label{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.chat-popup footer{
+  box-shadow: 0 -5px 5px -5px  #888888;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.chat-popup footer button{
+  border: none;
+  background-color: #78A300;
+  padding:15px 35px;
+  font-weight: 600;
+  border-radius: 10px;
+  color: black;
+  transition: all 0.2s ease;
+}
+
+.chat-popup footer button:hover{
+  background-color: rgb(128, 175, 0);
+
+}
+

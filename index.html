@@ -513,14 +513,57 @@
 
 <!-- chatbox -->
 
+<button class="open-button" onclick="openForm()"> <div class="d-inline"> <img src="./assets/imgs/comment-regular.svg" alt="">Chat</div> </button>
+
+<div class="chat-popup" id="myForm">
+  <div class="headsec"> 
+    <h5>Need Help?</h5>
+    <img onclick="closeForm()" src="./assets/imgs/times-solid.svg" alt="">
+  </div>
+  <div id="inform">
+    <form action="" class="form-container">
+      <p>Hi there! Welcome to Livspace</p>
+  
+      <div class="form-group">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" >
+      </div>
+  
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+  
+      <div class="form-group">
+        <label for="formGroupExampleInput">Phone Number <small>(Optional)</small> </label>
+        <input type="text" class="form-control" id="formGroupExampleInput" >
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+  
+      
+    </form>
+  </div>
+ 
+
+  <footer>
+    <button>Start Chat</button>
+  </footer>
+</div>
 
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha256-VV47uJSoHZUeiBcCs3FcBOQLMn++yeG/zqZvaUkvGZM=" crossorigin="anonymous"></script>
+  
 <script src="main.js">
-
 </script>
+  
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
