@@ -536,7 +536,7 @@ table td:nth-child(1){
 .open-button {
   background-color: #78A300 ;
   color: black;
-  padding: 16px 15px;
+  padding: 14px 12px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
@@ -545,14 +545,14 @@ table td:nth-child(1){
   right: 30px;
   width: 130px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   align-items: center;
   border-radius: 50px;
   
 }
 
 .open-button img {
-  width: 25px;
+  width: 15px;
   margin-right: 5px;
 }
 
@@ -563,7 +563,7 @@ table td:nth-child(1){
 .chat-popup {
   
   box-shadow: 1px 1px 10px #888888;
-  width: 450px;
+  width: 341px;
   display: none;
   position: fixed;
   bottom: 0;
@@ -572,10 +572,15 @@ table td:nth-child(1){
   background-color: #78A300;
   z-index: 9;
   border-radius: 10px;
+ 
+  max-height: 565px;
+  min-height: 150px;
+  overflow: hidden;
+
 }
 
 .form-container {
-  max-height: 500px;
+  max-height: 450px;
   max-width: 100%;
   padding: 30px;
   padding-bottom: 50px;
@@ -588,7 +593,7 @@ table td:nth-child(1){
 
 .headsec{
   width: 100%;
-  padding: 15px 20px;
+  padding: 10px 10px;
 
   display: flex;
   align-items: center;
@@ -601,14 +606,15 @@ table td:nth-child(1){
   padding: 0%;
   margin: 0;
   
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   position: absolute;
   left:35%;
 }
 .headsec img {
   margin-left: auto;
-  width: 25px;
+  padding-right: 5px;
+  width: 20px;
  
 }
 
@@ -633,8 +639,8 @@ label{
 .chat-popup footer button{
   border: none;
   background-color: #78A300;
-  padding:15px 35px;
-  font-weight: 600;
+  padding:10px 25px;
+  font-weight: 500;
   border-radius: 10px;
   color: black;
   transition: all 0.2s ease;
