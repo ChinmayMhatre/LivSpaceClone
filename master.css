@@ -35,7 +35,7 @@ body{
   height: 80px;
   padding-left:  30px;
   padding-right: 30px;
-  box-shadow: 2px 2px 5px #888888;
+  box-shadow: 2px 1px 5px #b8b8b8;
 }
 #mynavbar .nav-item{
   margin-left: 0.7rem;
@@ -45,9 +45,13 @@ body{
 
   color: black;
 }
+.c-color{
+  transition: all 0.3s ease;
+}
 
 .c-color:hover{
   color: #eb595f;
+  text-decoration: none;
 }
 
 #mynavbar .nav-link {
@@ -520,7 +524,7 @@ table td:nth-child(1){
 
 .b-vc img{
   border-radius: 5px;
-  width: 650px;
+  width: 100%;
 }
 
 .b-vc a img{
@@ -536,14 +540,14 @@ table td:nth-child(1){
 .open-button {
   background-color: #78A300 ;
   color: black;
-  padding: 14px 12px;
+  padding: 12px 10px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 23px;
+  bottom: 12px;
   right: 30px;
-  width: 130px;
+  width: 110px;
   font-weight: 600;
   font-size: 15px;
   align-items: center;
@@ -653,4 +657,91 @@ label{
 
 *:focus {
   outline-width: 0px !important;
+}
+
+
+
+/* footer */
+
+.footer{
+  font-size: 14px;
+  color: white;
+  background-color:#41303e;
+}
+
+.footer a {
+  color: white;
+}
+.footer .top-sec{
+  padding-bottom: 60px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .top-sec img{
+  width: 200px;
+}
+
+.footer .top-sec svg{
+width: 25px;
+height: 25px;
+}
+ 
+
+.logs{
+  width: 100%;
+  justify-content: space-between;
+}
+
+.foot-sec{
+  width: 280px;
+}
+
+.foot-sec .row{
+  padding-top: 10px;
+}
+
+
+hr.style-one {
+  margin-bottom: 0;
+  border: 0;
+  height: 1px;
+  background: black;
+  background-image: linear-gradient(to right,  rgb(99, 99, 99), rgb(99, 99, 99), rgb(153, 153, 153));
+}
+
+.bottom-sec{
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.country{
+  margin-left:auto;
+  margin-right: 5px;
+}
+
+.ind{
+  padding:5px 10px;
+  border-radius: 50px;
+  border: 2px solid red;
+}
+.ind img{
+  margin-right: 5px;
+  
+  width: 30px;
+ 
+}
+
+.SG{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.SG img{
+  margin-right: 5px;
+  
+  width: 30px;
+ 
 }
