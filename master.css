@@ -164,6 +164,7 @@ transition-delay: 0.1;
   font-size: 13px;
   font-weight: 600;
   background-color: #eb595f;
+  outline: none;
 }
 
 #navbarDropdown{
@@ -660,6 +661,103 @@ label{
 }
 
 
+
+
+
+
+
+/* news */
+
+.news{
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.reviews{
+  margin: 0;
+  padding:0;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 1;
+
+}
+
+.reviews .square{
+  height: 190px;
+  border:1px solid #eceaeb;
+  border-radius: 4px;
+  padding:20px;
+  background-color: white;
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  max-width: 350px;
+}
+
+.reviews .square img{
+  
+ width: 200px;
+}
+
+.reviews .square p{
+  margin-top: 8px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+
+
+
+/* semi-footer */
+
+#semi-footer{
+  height: 450px;
+  padding: 0;
+ position: relative;
+
+}
+
+#semi-footer div{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top:170px;
+  left: 50vh;
+  
+}
+
+#semi-footer img{
+  width: 100%;
+  
+  
+}
+#semi-footer small{
+  color: #b8b8b8;
+  position: relative;
+  top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  
+  
+}
+#semi-footer a{
+  color: #eb595f;
+  position: relative;
+  
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  
+  
+}
 
 /* footer */
 
