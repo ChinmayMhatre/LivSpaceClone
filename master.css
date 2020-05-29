@@ -182,7 +182,7 @@ transition-delay: 0.1;
 
 /* video */
 .shad{
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 10px rgb(56, 55, 55);
 }
 
 .video-container{
@@ -254,9 +254,9 @@ p{
 }
 
 .ileft{
-  border-radius: 4px;
+  border-radius: 8px;
   width: 50%;
-  box-shadow: 1px 1px 10px #888888;
+  box-shadow: 1px 1px 10px #adadad;
   margin-right: 15px;
 
 
@@ -266,7 +266,7 @@ p{
     border-radius: 8px;
   width: 50%;
   margin-left: 15px;
-    box-shadow: 1px 1px 10px #888888;
+    box-shadow: 1px 1px 10px #adadad;
 
 }
 
@@ -347,7 +347,9 @@ padding-bottom: 120px;
 
 .table-wrapper{
 padding-top: 100px;
-
+border: none;
+padding-left: 70px;
+padding-right: 70px;
 
 }
 
@@ -365,35 +367,40 @@ td{
 
 
 .head{
-  
+  border: none;
   font-weight: 600;
   font-size: 20px;
 }
 
 .head1{
-  border-top: 0;;
+  border: none;
+
 }
+
+
 
 table{
   border: none;
   font-size: 20px;
-  padding :20px;
-  border-bottom: 2px dashed #d9d6d8;
+  padding :50px;
+  outline: none;
 }
 
 tr{
-  border: 0 solid;
+  border:none;
 }
 
 table td:nth-child(3){
-  
+  border: none;
+  border-bottom:2px dashed #b8b8b8;
   vertical-align: middle;
   
   
 }
 
 table td:nth-child(2){
- 
+  border: none;
+  border-bottom:2px dashed #b8b8b8;
   box-shadow: 0 2px 6px 0 rgba(65,48,62,.12) ;
   vertical-align: middle;
   font-weight: bold;
@@ -402,7 +409,8 @@ table td:nth-child(2){
 
 
 table td:nth-child(1){
-  
+  border: none;
+  border-bottom:2px dashed #b8b8b8;
   vertical-align: middle;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -411,6 +419,7 @@ table td:nth-child(1){
 
 
 #head{
+  
   border-radius: 8px 8px 0 0;
   border-top-style:hidden;
   border-left-style:hidden;
@@ -499,12 +508,12 @@ table td:nth-child(1){
   padding-right: 30px;
 }
 
-.card{
+.cards{
   border-radius: 5px;
   transition: all 0.5s ease;
 }
 
-.card:hover{
+.cards:hover{
   box-shadow: 1px 0.5px 10px #d9d6d8;
 }
 
@@ -512,13 +521,54 @@ table td:nth-child(1){
   overflow: hidden;
 }
 
-.card img{
+.cards img{
   transition: transform 0.5s ease;
 }
 
-.card img:hover{
+.cards img:hover{
  transform:scale(1.1) ;
 }
+
+
+
+
+
+
+
+
+
+
+/* modal */
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+
+
+
+
+
+
+
+
 
 
 /* below video card */
@@ -664,6 +714,135 @@ label{
 
 
 
+
+
+
+
+/* mytabs */
+
+.my-tabs h1{
+  font-size: 45px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+
+
+.my-tabs {
+
+  padding-top: 70px;
+ 
+}
+
+
+.my-tabs p{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+
+.tab-container{
+  width: 100%;
+}
+
+.tab-container .button-container{
+  border-bottom: 2px solid #b9b9b9;;
+  height: 40%;
+  box-sizing: border-box;
+}
+
+.tab-container .button-container button{
+  text-align: left;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-top: 12px;
+  padding-left: 0;
+  padding-right: 15px;
+  padding-bottom: 18px;
+  font-size: 18px;
+  color: #7a6e77;;
+  background-color:#f5f4f5; 
+  transition: all 0.3s  ease;
+  box-sizing: border-box;
+}
+
+.tab-container .button-container button:hover{
+  
+  color: #eb595f;
+}
+
+
+.tab-container  .tab-panel a{
+ color:#eb595f; 
+  
+}
+.tab-container  .tab-panel{
+display: none;
+  
+}
+
+
+.tab-container  .tab-panel .video-card .card-body{
+  background-color: #f5f4f5;
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+  
+}
+
+.tab-container  .tab-panel .video-card .cards{
+  border: none;
+  
+  
+}
+
+.tab-container  .tab-panel .video-card {
+ padding-top: 20px;
+  
+  
+}
+
+.tab-container  .tab-panel .video-card .cards:hover{
+  box-shadow: none;
+
+  
+}
+
+
+
+
+
+
+/* design fix */
+
+.design-fix h1{
+  font-size: 45px;
+  margin-bottom: 0;
+}
+
+
+.design-fix p{
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.design-fix a{
+  color: #eb595f;
+}
+
+
+.design-fix .card-text{
+  font-weight: 600;
+}
+
+.design-fix .card{
+  border: none;
+}
+.design-fix .card img{
+  border-radius: 5px;
+}
 
 
 /* news */

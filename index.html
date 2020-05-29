@@ -329,7 +329,7 @@
 
       <table class="table mytable mt-5">
         <tr class="headrow">
-          <td class="border-top-0 border"></td>
+          <td class=""></td>
           <td id="head">Livspace experience</td>
           <td id="head1">Typical experience</td>
         </tr>
@@ -400,7 +400,7 @@
 
       </table>
 
-      <button id="table-button" class="but mt-3 px-5">BOOK ONLINE CONSULTATION</button>
+      <button id="table-button" class="mybtn btn but mt-3 px-5">BOOK ONLINE CONSULTATION</button>
 
 
 
@@ -413,21 +413,20 @@
 <section class="white-bg container-fluid ">
   <div class=" card4 container">
     <div class="squares py-4"><div class="d-flex flex-column align-items-center px-4">
-      <img src="/assets/imgs/booking.png" alt="">
+      <img src="./assets/imgs/booking.png" alt="">
        1 booking every hour* </div></div>
     <div class="squares py-4"><div class="d-flex flex-column align-items-center px-4">
-      <img src="/assets/imgs/designer.png" alt="">
+      <img src="./assets/imgs/designer.png" alt="">
       3,500+ expert designers  </div></div>
     <div class="squares py-4"><div class="d-flex flex-column align-items-center px-4">
-      <img src="/assets/imgs/catalog.png" alt="">
+      <img src="./assets/imgs/catalog.png" alt="">
       2.5 lakh+ catalogue products </div></div>
     <div class="squares py-4"><div class="d-flex flex-column align-items-center px-4">
-      <img src="/assets/imgs/location.png" alt="">
+      <img src="./assets/imgs/location.png" alt="">
       10 cities & 2 countries  </div></div>
 
   </div>
 </section>
-
 
 
 
@@ -441,9 +440,9 @@
       <a href=""> View More <span class="pl-1"></span></a>
     </div>
     <div class="video-card ">
-      <div class="card" style="width: 22rem;">
+      <div class="card cards" style="width: 22rem;">
         <div class="card-img">
-        <img src="/assets/imgs/testimonial_desktop-rohit.jpg" class="card-img-top" alt="...">
+        <img  src="./assets/imgs/testimonial_desktop-rohit.jpg" class="card-img-top video-btn " data-toggle="modal" data-target="#myModal" data-src="https://www.youtube.com/embed/0j6s1XfPA3k"  alt="...">
         </div>
         <div class="card-body">
           <div >“Hats off to the entire team at Livspace. They finished the project ahead of time. They said 45 days but finished it much earlier.”</div>
@@ -452,9 +451,9 @@
         </div>
       </div>
 
-      <div class="card" style="width: 22rem;">
+      <div class="card cards" style="width: 22rem;">
         <div class="card-img">
-        <img src="/assets/imgs/testimonial_desktop_swati.jpg" class="card-img-top" alt="...">
+        <img src="./assets/imgs/testimonial_desktop_swati.jpg" class="card-img-top video-btn" data-toggle="modal" data-target="#myModal" data-src="https://www.youtube.com/embed/bEV3zxJyMXY"  alt="...">
         </div>
         <div class="card-body">
           <div >“Our experience with Livspace was nice thanks to the project managers. They worked so much on this project, and finished it on time.”</div>
@@ -463,9 +462,9 @@
         </div>
       </div>
 
-      <div class="card" style="width: 22rem;">
+      <div class="card cards" style="width: 22rem;">
         <div class="card-img">
-        <img src="/assets/imgs/desktop_testimonial_pooja.jpg" class="card-img-top" alt="...">
+        <img src="./assets/imgs/desktop_testimonial_pooja.jpg" class="card-img-top video-btn" data-toggle="modal" data-target="#myModal" data-src="https://www.youtube.com/embed/2iKZZEYqtXU"  alt="...">
         </div>
         <div class="card-body">
           <div >“This house is a part of me. We reached out to Livspace and they designed the house that we really wanted,And at an amazing pace .”</div>
@@ -482,8 +481,31 @@
 
 <!-- modal section -->
 
-<div class="bg-modal">
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
 
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div> 
+  
+  
+  
 </div>
 
 
@@ -496,7 +518,7 @@
       <div class="col-6 ">
         <div class="big">See. Touch. Experience. </div>
         <p class="">Come to our Experience Centre and get a look and feel of what we do!</p>
-        <a class="red" href="">Let's meet! <img class="red" src="./assets/imgs/chevron-right-solid.svg" alt=""></a>
+        <a class="red" href="">Let's meet! </a>
       </div>
       <div class="col-6">
         
@@ -510,49 +532,308 @@
 
 
 
+<section class="greyish-bg container-fluid">
+  <div class="my-tabs container ">
+    <h1 class="">Looking for design inspiration?</h1>
+    <p>Browse thousands of looks that we've curated specially for you. </p>
 
-<!-- chatbox -->
+    <div class="tab-container mt-3 pt-3">
+      <div class="button-container">
+        <button onclick="showpanel(0)">Modular kitchens </button>
+        <button onclick="showpanel(1)">Living rooms  </button>
+        <button onclick="showpanel(2)">Bedrooms</button>
+        <button onclick="showpanel(3)">Kid's room</button>
+        <button onclick="showpanel(4)">Modular wardrobes  </button>
+      </div>
 
-<button class="open-button" onclick="openForm()"> <div class="d-inline"> <img src="./assets/imgs/comment-regular.svg" alt="">Chat</div> </button>
-
-<div class="chat-popup" id="myForm">
-  <div class="headsec"> 
-    <h5>Need Help?</h5>
-    <img onclick="closeForm()" src="./assets/imgs/times-solid.svg" alt="">
-  </div>
-  <div id="inform">
-    <form action="" class="form-container">
-      <p>Hi there! Welcome to Livspace</p>
-  
-      <div class="form-group">
-        <label for="formGroupExampleInput">Name</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" >
-      </div>
-  
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-  
-      <div class="form-group">
-        <label for="formGroupExampleInput">Phone Number <small>(Optional)</small> </label>
-        <input type="text" class="form-control" id="formGroupExampleInput" >
-      </div>
+        <div class="tab-panel">
+          <div class="d-flex justify-content-between pt-3 mt-3 ">
+            <h3>Popular Modular Kitchens</h3>
+            <a href="" class="c-color">
+              View all modular kitchens </a>
+          </div>
       
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-  
+          
+          <div class="video-card ">
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img  src="/assets/imgs/2017_05_13_EMERALD_HILLS_ST01_KT1_C1_SU.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body">
+                <div class="name-card">Estelle L-shaped Kitchen</div>
+                
+              </div>
+            </div>
       
-    </form>
-  </div>
- 
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/2018_09_11_BRIGADE_COSMOPOLIS_481_KT1_SA_02.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Aspen L-shaped Kitchen</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/b0c7754d-b91c-4cd5-a1e5-18cf225826d2.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Chloe Kitchen WIth Island Counter</div>
+                
+              </div>
+            </div>
+      
+          </div>  
 
-  <footer>
-    <button>Start Chat</button>
-  </footer>
+
+
+
+
+        </div>
+        <div class="tab-panel">
+          <div class="d-flex justify-content-between pt-3 mt-3 ">
+            <h3>Popular Living Rooms</h3>
+            <a href="" class="c-color">
+              View all Living Rooms </a>
+          </div>
+      
+          
+          <div class="video-card ">
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img  src="/assets/imgs/aqua.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body">
+                <div class="name-card">Aqua Delight</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/serene.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Serene Summer</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/artistic.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Artistic Intrigue</div>
+                
+              </div>
+            </div>
+      
+          </div>  
+
+
+
+
+
+        </div>
+        <div class="tab-panel">
+          <div class="d-flex justify-content-between pt-3 mt-3 ">
+            <h3>Popular bedrooms</h3>
+            <a href="" class="c-color">
+              View all bedrooms </a>
+          </div>
+      
+          
+          <div class="video-card ">
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img  src="/assets/imgs/guest bedroom.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body">
+                <div class="name-card">Contemporary Cluster Guest Bedroom</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/fusion.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Contemporary Fusion Guest Room</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/chic.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Serene Chic Guest Bedroom</div>
+                
+              </div>
+            </div>
+      
+          </div>  
+
+
+
+
+
+        </div>
+        <div class="tab-panel">
+          <div class="d-flex justify-content-between pt-3 mt-3 ">
+            <h3>Popular Kid's Room</h3>
+            <a href="" class="c-color">
+              View all Kid's Room </a>
+          </div>
+      
+          
+          <div class="video-card ">
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img  src="/assets/imgs/vibrant.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body">
+                <div class="name-card">Vibrant Kids Bedroom Interior Design</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/alluring.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Alluring Kids Bedroom Interior Design</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/cosy.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Cosy Kids Bedroom Interior Design</div>
+                
+              </div>
+            </div>
+      
+          </div>  
+
+
+
+
+
+        </div>
+        <div class="tab-panel">
+          <div class="d-flex justify-content-between pt-3 mt-3 ">
+            <h3>Popular Modular Wardrobes</h3>
+            <a href="" class="c-color">
+              View all modular Wardrobes </a>
+          </div>
+      
+          
+          <div class="video-card ">
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img  src="/assets/imgs/brick.jpg" class="card-img-top " alt="...">
+              </div>
+              <div class="card-body">
+                <div class="name-card">Brick Beauty</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/raymond.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">Raymond High</div>
+                
+              </div>
+            </div>
+      
+            <div class="card cards" style="width: 22rem;">
+              <div class="card-img">
+              <img src="/assets/imgs/october.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                 <div class="name-card">October Skies</div>
+                
+              </div>
+            </div>
+      
+          </div>  
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+<!-- design fix -->
+
+<div class="white-bg container-fluid">
+  <div class="container design-fix">
+    <h1 class=" big-headers">Stay updated with the latest design trends!</h1>
+    <div class="d-flex justify-content-between">
+      <p>Find everything from design fixes to expert tips on Livspace magazine</p>
+      <a href="">See more </a>
+    </div>
+
+    <div class=" d-flex justify-content-between pt-4 mt-4">
+      <div class="card" style="width: 346px;">
+         <img src="./assets/imgs/Blog-cover_Clean-rugs-and-carpets-scaled.jpg" class="card-img-top" alt="...">
+         <div class="card-body text-left m-0 pl-0">
+             <p class="card-text">The Easy & Free Way to Clean Your Carpets & Rugs</p>
+              <small>Srishti Jain | <i>May 27,2020</i></small>
+            </div>
+           </div>
+
+
+           <div class="card" style="width: 346px;">
+            <img src="./assets/imgs/Cover.png" class="card-img-top" alt="...">
+            <div class="card-body text-left m-0 pl-0">
+              <p class="card-text">What is Kalinga Stone and How Can it Make Your Kitchen Better?</p>
+              <small>Livspace Editorial Team | May 27, 2020</small>
+   
+               </div>
+              </div>
+
+
+              <div class="card" style="width: 346px;">
+                <img src="./assets/imgs/Blog-2.png" class="card-img-top" alt="...">
+                <div class="card-body text-left m-0 pl-0">
+                  <p class="card-text">What is PVC and Why Should You Use it In Your Kitchen Cabinets?</p>
+                  <small>Renita Pereira | May 26, 2020</small>
+       
+                   </div>
+                  </div>
+
+    </div>
+
+
+  </div>
 </div>
 
 
@@ -575,14 +856,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -682,6 +955,62 @@
 
 
 
+
+
+
+
+<!-- chatbox -->
+
+<button class="open-button" onclick="openForm()"> <div class="d-inline"> <img src="./assets/imgs/comment-regular.svg" alt="">Chat</div> </button>
+
+<div class="chat-popup" id="myForm">
+  <div class="headsec"> 
+    <h5>Need Help?</h5>
+    <img onclick="closeForm()" src="./assets/imgs/times-solid.svg" alt="">
+  </div>
+  <div id="inform">
+    <form action="" class="form-container">
+      <p>Hi there! Welcome to Livspace</p>
+  
+      <div class="form-group">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" >
+      </div>
+  
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+  
+      <div class="form-group">
+        <label for="formGroupExampleInput">Phone Number <small>(Optional)</small> </label>
+        <input type="text" class="form-control" id="formGroupExampleInput" >
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+  
+      
+    </form>
+  </div>
+ 
+
+  <footer>
+    <button>Start Chat</button>
+  </footer>
+</div>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha256-VV47uJSoHZUeiBcCs3FcBOQLMn++yeG/zqZvaUkvGZM=" crossorigin="anonymous"></script>
   
